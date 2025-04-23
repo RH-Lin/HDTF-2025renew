@@ -4,6 +4,12 @@
 Flow-guided One-shot Talking Face Generation with a High-resolution Audio-visual Dataset 
 <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Flow-Guided_One-Shot_Talking_Face_Generation_With_a_High-Resolution_Audio-Visual_Dataset_CVPR_2021_paper.pdf" target="_blank">paper</a>    <a href="https://github.com/MRzzm/HDTF/blob/main/Supplementary%20Materials.pdf" target="_blank">supplementary</a>   [demo video](https://www.youtube.com/watch?v=uJdBgWYBTww)
 
+## HDTF-2025Renew
+
+1. The Original HDTF <a href="https://github.com/MRzzm/HDTF" target="_blank">MRzzm</a> and data processing one <a href="https://github.com/universome/HDTF" target="_blank">universome</a> have a few processing issues including cropping deviation and resolution error. This fork revise them for correct cropping process, including files: xx_resolution.txt, xx_annotion_time.txt, and xx_crop_wh.txt.
+2. This fork add a redownload shell to download the youtube videos in a recursive way. For the buddy facing downloading interruption, the shell file "download.sh" can be runned in multiple times to collect the complete downloadable data of HDTF dataset.
+
+
 ## Details of HDTF dataset
 **./HDTF_dataset** consists of *youtube video url*, *video resolution* (in our method, may not be the best resolution), *time stamps of talking face*, *facial region* (in the our method) and *the zoom scale* of the cropped window.
 
